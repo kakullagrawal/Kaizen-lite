@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaizen Lite - AI Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HERO SECTION -->
+        <div class="hero">
+            <h1>Kaizen Lite</h1>
+            <p>AI Resume Builder & Skill Analyzer</p>
+        </div>
+
+        <!-- FORM GRID -->
+        <div class="form-grid">
+
+            <div class="card">
+                <h2>User Information</h2>
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="text" id="phone" placeholder="Phone Number">
+                <input type="email" id="email" placeholder="Professional Email">
+                <input type="text" id="location" placeholder="Location">
+                <input type="text" id="linkedin" placeholder="LinkedIn URL">
+                <textarea id="summary" placeholder="Professional Summary"></textarea>
+            </div>
+
+            <div class="card">
+                <h2>Education</h2>
+                <input type="text" id="degree" placeholder="Degree">
+                <input type="text" id="college" placeholder="College Name">
+                <input type="text" id="graduation" placeholder="Graduation Year">
+            </div>
+
+            <div class="card">
+                <h2>Experience (Optional)</h2>
+                <input type="text" id="jobTitle" placeholder="Job Title">
+                <input type="text" id="company" placeholder="Company Name">
+                <input type="text" id="duration" placeholder="Duration">
+            </div>
+
+            <div class="card">
+                <h2>Skills</h2>
+                <textarea id="skills" placeholder="Enter skills separated by commas"></textarea>
+            </div>
+
+            <!-- 🔥 NEW: HOBBIES -->
+            <div class="card">
+                <h2>Hobbies</h2>
+                <textarea id="hobbies" placeholder="Enter hobbies separated by commas"></textarea>
+            </div>
+
+            <div class="card">
+                <h2>Target Role</h2>
+                <select id="role">
+                    <option>Web Developer</option>
+                    <option>Frontend Developer</option>
+                    <option>Backend Developer</option>
+                    <option>Full Stack Developer</option>
+                    <option>Python Developer</option>
+                    <option>AI Engineer</option>
+                    <option>Data Analyst</option>
+                    <option>Software Engineer</option>
+                    <option>UI/UX Designer</option>
+                    <option>Cybersecurity Analyst</option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="button-group">
+            <button onclick="generateResume()">Generate Resume</button>
+            <button onclick="window.print()">Download Resume (PDF)</button>
+        </div>
+
+        <!-- OUTPUT -->
+        <div id="output"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
